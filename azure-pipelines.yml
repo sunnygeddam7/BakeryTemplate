@@ -20,3 +20,7 @@ steps:
     restoreSolution: '**/*.sln'
     feedsToUse: 'select'
 
+- task: NuGetCommand@2
+  inputs:
+    command: 'custom'
+    arguments: 'dotnet build'
